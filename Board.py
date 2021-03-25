@@ -16,13 +16,6 @@ class Board:
         Returns the board
         """
         return self.__data
-    
-    def print_backend(self):
-        """
-        Prints the board without texttable
-        """
-        for i in range(0, 8):
-            print(self.data[i])
 
     def print_visual(self):
         """
@@ -42,7 +35,7 @@ class Board:
         y = plane.cockpit_coords[1]
 
         self.__data[x][y] = 2   #cockpit
-        hull = plane.get_body()
+        hull = plane.body
         for i in range(0, len(hull)):
             self.__data[ hull[i][0] ][ hull[i][1] ] = 1
 

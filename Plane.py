@@ -35,7 +35,8 @@ class Plane:
         """
         return self.__col
 
-    def get_body(self):
+    @property
+    def body(self):
         """
         Returns the list of coords the plane's body occupies
         """

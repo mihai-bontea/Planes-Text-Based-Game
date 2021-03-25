@@ -31,7 +31,7 @@ class PlaneValidator:
             True- plane fits inside 8 x 8 board
             False- plane has parts that are outside
         """
-        plane_parts = plane.get_body()
+        plane_parts = plane.body
         
         for i in range(0 , len(plane_parts) ):
             if (plane_parts[i][0] < 0 or plane_parts[i][0] > 7) or (plane_parts[i][1] < 0 or plane_parts[i][1] > 7):
@@ -45,7 +45,7 @@ class PlaneValidator:
             True- new plane doesn't overlap with anything on the board
             False- overlaps
         """
-        plane_parts = plane.get_body()
+        plane_parts = plane.body
         plane_parts.append((plane.row - 1, ord(plane.col) - ord("A")))
         table = board.data
         for i in range(0, len(plane_parts)):

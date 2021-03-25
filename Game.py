@@ -51,8 +51,6 @@ class Game:
 
             return game
 
-
-
     def dump_JSON(self, filename):
         data = {}
         data['player_board'] = self.__player_board.data
