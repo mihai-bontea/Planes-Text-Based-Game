@@ -6,7 +6,7 @@ class Board:
 
     def __init__(self, d = None):
         if d == None:
-            self.__data = [ [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8, [0] * 8 ]
+            self.__data = [[0 for _ in range(8)] for _ in range(8)]
         else:
             self.__data = d
 
