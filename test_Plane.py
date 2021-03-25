@@ -20,10 +20,10 @@ class PLaneTest(unittest.TestCase):
         leftwards_plane = Plane("L", 4, "C")
         rightwards_plane = Plane("R", 4, "F")
 
-        u_body = upwards_plane.get_body()
-        d_body = downwards_plane.get_body()
-        l_body = leftwards_plane.get_body()
-        r_body = rightwards_plane.get_body()
+        u_body = upwards_plane.body
+        d_body = downwards_plane.body
+        l_body = leftwards_plane.body
+        r_body = rightwards_plane.body
 
         self.assertEqual(len(u_body), 9)
         self.assertEqual(len(d_body), 9)

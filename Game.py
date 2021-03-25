@@ -27,7 +27,6 @@ class Game:
         if self.__computer_board == None:
             self.__computer_board = Board()
 
-    
     @staticmethod
     def from_JSON(filename):
 
@@ -78,7 +77,6 @@ class Game:
         if ai == 2:
             #special function that prepares the second AI
             self.first_time_run()
-
 
     @property
     def player_hits(self):
